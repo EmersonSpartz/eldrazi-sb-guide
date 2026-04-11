@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Eldrazi Aggro SB Guide</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d0d0d; color: #e0e0e0; font-size: 14px; }
+.top-bar { background: #111; padding: 14px 16px 10px; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 20; }
+.top-bar h1 { font-size: 16px; font-weight: 700; color: #8a9aaa; letter-spacing: 0.3px; }
+.top-bar .subtitle { font-size: 11px; color: #555; margin-top: 2px; }
+.mu { border-bottom: 1px solid #181818; }
+.mu-head { display: flex; align-items: center; padding: 13px 16px; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; gap: 10px; }
+.mu-head:active { background: #161616; }
+.mu-name { flex: 1; font-size: 15px; font-weight: 600; color: #e8e8e8; }
+.mu-count { font-size: 10px; color: #555; background: #1c1c1c; border: 1px solid #2a2a2a; padding: 2px 7px; border-radius: 9px; }
+.chev { color: #333; font-size: 11px; transition: transform 0.18s; }
+.mu.open .chev { transform: rotate(180deg); }
+.mu-body { display: none; padding: 0 12px 14px; }
+.mu.open .mu-body { display: block; }
+.gc { background: #141414; border: 1px solid #1f1f1f; border-radius: 7px; margin-bottom: 8px; overflow: hidden; }
+.gc-head { background: #191919; padding: 7px 11px; display: flex; align-items: center; gap: 8px; }
+.gc-author { font-size: 12px; font-weight: 600; color: #7090a0; }
+.gc-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 9px 11px; }
+.col-head { font-size: 10px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 5px; }
+.col-in .col-head { color: #4caf6b; }
+.col-out .col-head { color: #e05a5a; }
+.c { font-size: 12px; padding: 2px 0; line-height: 1.45; }
+.c.in { color: #b8e8c8; }
+.c.out { color: #f5b8b8; }
+.c .q { font-weight: 700; font-size: 11px; color: #e05a5a; margin-right: 3px; }
+.gc-note { padding: 6px 11px 8px; border-top: 1px solid #1a1a1a; font-size: 11px; color: #666; font-style: italic; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <h1>Eldrazi Aggro SB Guide</h1>
+  <div class="subtitle">taplandgo / Mengu / misc</div>
+</div>
+
+<!-- BOROS ENERGY -->
+<div class="mu open">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Boros Energy</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Wastescape Intelligencer</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Thought-Knot Seer</div>
+          <div class="c out">Vexing Bauble</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JESKAI BLINK -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Jeskai Blink</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out"><span class="q">2</span>Wastescape Intelligencer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AFFINITY -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Affinity</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">Wastescape Intelligencer</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+        </div>
+      </div>
+      <div class="gc-note">Considered 1 Dismember in, All Is Dust out</div>
+    </div>
+  </div>
+</div>
+
+<!-- LIVING END -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Living End</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Dismember</div>
+          <div class="c out">Wastescape Intelligencer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Flute or Torpor Orb</div>
+    </div>
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Disruptor Flute</div>
+          <div class="c in">Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Intelligencer</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+          <div class="c out">It That Heralds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STORM -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Ruby Storm</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Disruptor Flute (1 of 2)</div>
+          <div class="c in">Damping Sphere</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Sowing Mycospawn (of 4)</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out">Dismember</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Chalice</div>
+    </div>
+  </div>
+</div>
+
+<!-- NEOFORM -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Neoform</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Dismember</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+      <div class="gc-note">Considered Wastescape in</div>
+    </div>
+  </div>
+</div>
+
+<!-- DOMAIN ZOO -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Domain Zoo</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Wastescape Intelligencer</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Vexing Bauble</div>
+        </div>
+      </div>
+      <div class="gc-note">NO Relic</div>
+    </div>
+  </div>
+</div>
+
+<!-- GRIXIS REANIMATOR -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Grixis Reanimator</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Intelligencer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out">Vexing Bauble</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DIMIR MIDRANGE -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Dimir Midrange</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Intelligencer</div>
+          <div class="c out"><span class="q">1</span>Linebreaker Baloth</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Vexing Bauble</div>
+    </div>
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">anon</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Intelligencer</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Trinisphere</div>
+    </div>
+  </div>
+</div>
+
+<!-- ESPER BLINK -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Esper Blink</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Intelligencer</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Chalice</div>
+    </div>
+  </div>
+</div>
+
+<!-- ELDRAZI RAMP -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Eldrazi Ramp</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Intelligencer</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Vexing Bauble</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GORYO'S -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Goryo's Vengeance</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>It That Heralds</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+    </div>
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Dismember</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Intelligencer</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BROODSCALE -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Broodscale Combo</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Intelligencer</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">All Is Dust</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- YAWGMOTH -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Yawgmoth</span><span class="chev">▼</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Intelligencer</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">It That Heralds</div>
+          <div class="c out"><span class="q">2</span>Thought-Knot Seer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+</script>
+</body>
+</html>
