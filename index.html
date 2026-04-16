@@ -14,7 +14,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 .mu-head { display: flex; align-items: center; padding: 13px 16px; cursor: pointer; -webkit-tap-highlight-color: transparent; user-select: none; gap: 10px; }
 .mu-head:active { background: #161616; }
 .mu-name { flex: 1; font-size: 15px; font-weight: 600; color: #e8e8e8; }
-.mu-count { font-size: 10px; color: #555; background: #1c1c1c; border: 1px solid #2a2a2a; padding: 2px 7px; border-radius: 9px; }
 .chev { color: #333; font-size: 11px; transition: transform 0.18s; }
 .mu.open .chev { transform: rotate(180deg); }
 .mu-body { display: none; padding: 0 12px 14px; }
@@ -38,10 +37,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
 <body>
 <div class="top-bar">
   <h1>Eldrazi Aggro SB Guide</h1>
-  <div class="subtitle">Dack Fayden07 / taplandgo / Mengu / misc</div>
+  <div class="subtitle">Dack Fayden07 / taplandgo / Mengu / mikedevo / misc</div>
 </div>
 
-<!-- BOROS ENERGY -->
 <div class="mu open">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Boros Energy</span><span class="chev">&#9660;</span>
@@ -63,29 +61,202 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
       </div>
     </div>
+
     <div class="gc">
       <div class="gc-head"><span class="gc-author">taplandgo</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
           <div class="c in">Chalice of the Void</div>
           <div class="c in">All Is Dust</div>
-          <div class="c in">Wastescape Battlemage</div>
           <div class="c in">Dismember</div>
-          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Warping Wail</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
           <div class="c out">Thought-Knot Seer</div>
           <div class="c out">Vexing Bauble</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+      <div class="gc-note">Sometimes Relic, sometimes Wastescape</div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">mikedevo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Warping Wail</div>
+          <div class="c in">Soul-Guide Lantern</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Eldrazi Linebreaker</div>
+          <div class="c out">It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- AZORIUS CONTROL -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Azorius Control</span><span class="chev">&#9660;</span>
+    <span class="mu-name">vs. BWx Blink / Ketramose</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">3</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Jeskai Blink</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Wastescape Battlemage</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Esper Blink</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Torpor Orb</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+          <div class="c out"><span class="q">1</span>Eldrazi Linebreaker</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Chalice</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Affinity</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">3</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
+        </div>
+      </div>
+      <div class="gc-note">Considered All Is Dust</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Ruby Storm</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">4</span>Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">4</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Disruptor Flute (1 of 2)</div>
+          <div class="c in">Damping Sphere</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">3</span>Sowing Mycospawn (of 4)</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out">Dismember</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Chalice. NOT Bauble?!</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Tron / Eldrazi Tron</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
     <div class="gc">
@@ -97,14 +268,433 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">No cards listed</div>
         </div>
       </div>
     </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+          <div class="c in">Damping Sphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Vexing Bauble</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Disruptor Flute</div>
+          <div class="c in">Wastescape Battlemage</div>
+          <div class="c in">Ghost Quarter</div>
+          <div class="c in">Damping Sphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Chalice of the Void</div>
+          <div class="c out">Bojuka Bog</div>
+          <div class="c out">Warping Wail</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Dismember?</div>
+    </div>
+
   </div>
 </div>
 
-<!-- MARDU ENERGY -->
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Amulet Titan</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Damping Sphere</div>
+          <div class="c in">Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Dismember</div>
+          <div class="c out">All Is Dust</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Relic, Torpor, Disruptor Flute</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Goryo's Vengeance</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Dismember</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Neoform Combo</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">2</span>Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Dismember</div>
+          <div class="c out">All Is Dust</div>
+        </div>
+      </div>
+      <div class="gc-note">Considered Wastescape</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Domain Zoo</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">3</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+          <div class="c in"><span class="qi">2</span>All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Vexing Bauble</div>
+        </div>
+      </div>
+      <div class="gc-note">Relic maybe. Maybe: 1 Sire, 2 Thought-Knot</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Izzet Prowess</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">4</span>Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Trinisphere</div>
+          <div class="c in">All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out"><span class="q">1</span>Ugin's Labyrinth</div>
+          <div class="c out">Glaring Fleshraker</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Mono Blue / Mono Red Belcher</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">1</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Living End</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+          <div class="c in"><span class="qi">4</span>Trinisphere</div>
+          <div class="c in"><span class="qi">2</span>All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Wastescape Battlemage</div>
+          <div class="c out"><span class="q">2</span>Glaring Fleshraker</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Relic of Progenitus</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Dismember</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Flute or Torpor Orb</div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">All Is Dust</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Disruptor Flute</div>
+          <div class="c in">Trinisphere</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+          <div class="c out">It That Heralds the End</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Dimir Midrange</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Chalice of the Void</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out"><span class="q">1</span>Eldrazi Linebreaker</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Vexing Bauble</div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">All Is Dust</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+        </div>
+      </div>
+      <div class="gc-note">NOT Trinisphere</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Grixis Reanimator</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Chalice of the Void</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Warping Wail</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out">Vexing Bauble</div>
+          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Graveyard hate</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Wastescape Battlemage</div>
+          <div class="c out">It That Heralds the End</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. UBx Froculus / Murktide</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">3</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Mardu Energy</span><span class="chev">&#9660;</span>
@@ -126,348 +716,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- MONO GREEN BASKING COMBO -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Mono Green Basking Combo</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>Devourer of Destiny</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">2</span>Goryo-related cuts</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- GORYO'S -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Goryo's Vengeance</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">2</span>Glaring Fleshraker (1)</div>
-          <div class="c out"><span class="q">2</span>Wastescape Battlemage (main)</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Relic of Progenitus</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out">All Is Dust</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Relic of Progenitus</div>
-          <div class="c in">Dismember</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Wastescape Battlemage</div>
-          <div class="c out">All Is Dust</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TRON/ELDRAZI TRON -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Tron / Eldrazi Tron</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">2</span>Dismember (trim)</div>
-          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
-          <div class="c out">Flex cuts</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- STORM -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Ruby Storm</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">4</span>Trinisphere</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">4</span>Sire of Seven Deaths</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Disruptor Flute (1 of 2)</div>
-          <div class="c in">Damping Sphere</div>
-          <div class="c in">Relic of Progenitus</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">3</span>Sowing Mycospawn (of 4)</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out">Dismember</div>
-        </div>
-      </div>
-      <div class="gc-note">NOT Chalice</div>
-    </div>
-  </div>
-</div>
-
-<!-- LIVING END -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Living End</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-          <div class="c in"><span class="qi">4</span>Trinisphere</div>
-          <div class="c in"><span class="qi">2</span>All Is Dust</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Wastescape Battlemage (main)</div>
-          <div class="c out"><span class="q">2</span>Glaring Fleshraker</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Chalice of the Void</div>
-          <div class="c in">All Is Dust</div>
-          <div class="c in">Relic of Progenitus</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Dismember</div>
-          <div class="c out">Wastescape Battlemage</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
-        </div>
-      </div>
-      <div class="gc-note">NOT Flute or Torpor Orb</div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">All Is Dust</div>
-          <div class="c in">Relic of Progenitus</div>
-          <div class="c in">Disruptor Flute</div>
-          <div class="c in">Trinisphere</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Wastescape Battlemage</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out">It That Heralds the End</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ELDRAZI RAMP/BREACH -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Eldrazi Ramp / Breach</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Flex cuts (8 total)</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Relic of Progenitus</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">Wastescape Battlemage</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Vexing Bauble</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- UBx FROCULUS/MURKTIDE -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. UBx Froculus / Murktide</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">3</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- MERFOLK -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Merfolk</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">3</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>All Is Dust</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">4</span>Izzet Prowess-style (see Merfolk)</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- IZZET PROWESS -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Izzet Prowess</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">4</span>Chalice of the Void (if not main)</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">4</span>Trinisphere</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- AMULET TITAN -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Amulet Titan</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Izzet Prowess cuts</div>
-          <div class="c out">Flex (3 more)</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- JESKAI ASCENDANCY -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Jeskai Ascendancy</span><span class="chev">&#9660;</span>
@@ -478,25 +730,22 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
           <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">3</span>Dismember</div>
           <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
           <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
           <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
           <div class="c in"><span class="qi">3</span>Trinisphere</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
+          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
           <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
           <div class="c out"><span class="q">4</span>Sire of Seven Deaths</div>
-          <div class="c out"><span class="q">2</span>Yawgmoth-related</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- YAWGMOTH/SAM COMBO -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Yawgmoth / Samwise Combo</span><span class="chev">&#9660;</span>
@@ -507,20 +756,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
           <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">3</span>Dismember</div>
           <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
           <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
           <div class="c in"><span class="qi">2</span>All Is Dust</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
           <div class="c out"><span class="q">4</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
           <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
           <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
         </div>
       </div>
     </div>
+
     <div class="gc">
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
@@ -535,99 +785,32 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- MONO BLACK ELDRAZI -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Mono Black Eldrazi</span><span class="chev">&#9660;</span>
+    <span class="mu-name">vs. Broodscale Combo</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
     <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">3</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End (1)</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- DOMAIN ZOO -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Domain Zoo</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">3</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>All Is Dust</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
-          <div class="c out">Flex (5 more)</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">All Is Dust</div>
+          <div class="c in">Dismember</div>
           <div class="c in">Wastescape Battlemage</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Vexing Bauble</div>
-        </div>
-      </div>
-      <div class="gc-note">NO Relic</div>
-    </div>
-  </div>
-</div>
-
-<!-- UR WIZARDS/SPLINTER TWIN -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. UR Wizards / Splinter Twin</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
-          <div class="c out">Flex (4 more)</div>
+          <div class="c out">All Is Dust</div>
+          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- CREATIVITY -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Creativity</span><span class="chev">&#9660;</span>
@@ -644,18 +827,137 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
           <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out">Flex (7 more)</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- BWx BLINK/KETRAMOSE -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. BWx Blink / Ketramose</span><span class="chev">&#9660;</span>
+    <span class="mu-name">vs. Eldrazi Ramp / Breach</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">4</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Relic of Progenitus</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Vexing Bauble</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in">Dismember</div>
+          <div class="c in">Wastescape Battlemage</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out">Chalice of the Void</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Mono Black Eldrazi</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">1</span>Devourer of Destiny</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. UR Wizards / Splinter Twin</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Mono Green Basking Combo</span><span class="chev">&#9660;</span>
+  </div>
+  <div class="mu-body">
+    <div class="gc">
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
+      <div class="gc-cols">
+        <div class="col-in"><div class="col-head">IN</div>
+          <div class="c in"><span class="qi">2</span>Chalice of the Void</div>
+          <div class="c in"><span class="qi">2</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
+        </div>
+        <div class="col-out"><div class="col-head">OUT</div>
+          <div class="c out"><span class="q">4</span>Devourer of Destiny</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="mu">
+  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
+    <span class="mu-name">vs. Merfolk</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
     <div class="gc">
@@ -668,77 +970,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c in"><span class="qi">2</span>All Is Dust</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
-          <div class="c out">Flex (8 more)</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- AFFINITY -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Affinity</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Chalice of the Void</div>
-          <div class="c in">Wastescape Battlemage</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Thought-Knot Seer</div>
           <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-        </div>
-      </div>
-      <div class="gc-note">Considered 1 Dismember in, All Is Dust out</div>
-    </div>
-  </div>
-</div>
-
-<!-- MONO BLUE/MONO RED BELCHER -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Mono Blue / Mono Red Belcher</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">1</span>Chalice of the Void</div>
-          <div class="c in"><span class="qi">1</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>Sire of Seven Deaths</div>
-          <div class="c out">Flex (2 more)</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- MILL -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Mill</span><span class="chev">&#9660;</span>
@@ -752,54 +993,13 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c in"><span class="qi">2</span>Dismember</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Flex (4 total)</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- NEOFORM COMBO -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Neoform Combo</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in"><span class="qi">2</span>Dismember</div>
-          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
-          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
-          <div class="c in"><span class="qi">2</span>Trinisphere</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">4</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Wastescape Battlemage (main)</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-          <div class="c out"><span class="q">2</span>Sire of Seven Deaths</div>
-        </div>
-      </div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Chalice of the Void</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Dismember</div>
-          <div class="c out">All Is Dust</div>
-        </div>
-      </div>
-      <div class="gc-note">Considered Wastescape in</div>
-    </div>
-  </div>
-</div>
-
-<!-- RAKDOS/GRUUL HOLLOW ONE -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. Rakdos / Gruul Hollow One</span><span class="chev">&#9660;</span>
@@ -820,10 +1020,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- 4C OMNATH -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
     <span class="mu-name">vs. 4c Omnath</span><span class="chev">&#9660;</span>
@@ -841,18 +1041,16 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
           <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Sire of Seven Deaths (flex)</div>
-          <div class="c out">Flex (6 more)</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- HAMMER/SCALES -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Hammer / Scales</span><span class="chev">&#9660;</span>
+    <span class="mu-name">vs. Hammer</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
     <div class="gc">
@@ -862,150 +1060,46 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; b
           <div class="c in"><span class="qi">3</span>Dismember</div>
           <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
           <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
-          <div class="c in"><span class="qi">2</span>Unlicensed Hearse</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
           <div class="c out"><span class="q">2</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Devourer of Destiny</div>
           <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
-          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
           <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">2</span>Devourer of Destiny</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- JESKAI BLINK (taplandgo only) -->
 <div class="mu">
   <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Jeskai Blink</span><span class="chev">&#9660;</span>
+    <span class="mu-name">vs. Scales</span><span class="chev">&#9660;</span>
   </div>
   <div class="mu-body">
     <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
+      <div class="gc-head"><span class="gc-author dack">Dack Fayden07</span></div>
       <div class="gc-cols">
         <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Chalice of the Void</div>
+          <div class="c in"><span class="qi">3</span>Dismember</div>
+          <div class="c in"><span class="qi">2</span>Wastescape Battlemage</div>
+          <div class="c in"><span class="qi">2</span>Disruptor Flute</div>
         </div>
         <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">2</span>Wastescape Battlemage</div>
+          <div class="c out"><span class="q">2</span>It That Heralds the End</div>
+          <div class="c out"><span class="q">1</span>Glaring Fleshraker</div>
+          <div class="c out"><span class="q">1</span>Thought-Knot Seer</div>
+          <div class="c out"><span class="q">1</span>Sowing Mycospawn</div>
+          <div class="c out"><span class="q">2</span>Devourer of Destiny</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
-<!-- GRIXIS REANIMATOR (taplandgo only) -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Grixis Reanimator</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">Chalice of the Void</div>
-          <div class="c in">Relic of Progenitus</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Wastescape Battlemage</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out">Vexing Bauble</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- DIMIR MIDRANGE (taplandgo only) -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Dimir Midrange</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">Chalice of the Void</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Wastescape Battlemage</div>
-          <div class="c out"><span class="q">1</span>Eldrazi Linebreaker</div>
-        </div>
-      </div>
-      <div class="gc-note">NOT Vexing Bauble</div>
-    </div>
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">anon</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">All Is Dust</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Wastescape Battlemage</div>
-        </div>
-      </div>
-      <div class="gc-note">NOT Trinisphere</div>
-    </div>
-  </div>
-</div>
-
-<!-- ESPER BLINK (taplandgo only) -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Esper Blink</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">taplandgo</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">Wastescape Battlemage</div>
-          <div class="c in">All Is Dust</div>
-          <div class="c in">Torpor Orb</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">Thought-Knot Seer</div>
-          <div class="c out"><span class="q">1</span>It That Heralds the End</div>
-          <div class="c out"><span class="q">1</span>Sire of Seven Deaths</div>
-        </div>
-      </div>
-      <div class="gc-note">NOT Chalice</div>
-    </div>
-  </div>
-</div>
-
-<!-- BROODSCALE COMBO (Mengucci only) -->
-<div class="mu">
-  <div class="mu-head" onclick="this.parentElement.classList.toggle('open')">
-    <span class="mu-name">vs. Broodscale Combo</span><span class="chev">&#9660;</span>
-  </div>
-  <div class="mu-body">
-    <div class="gc">
-      <div class="gc-head"><span class="gc-author">Mengucci</span></div>
-      <div class="gc-cols">
-        <div class="col-in"><div class="col-head">IN</div>
-          <div class="c in">Dismember</div>
-          <div class="c in">Wastescape Battlemage</div>
-        </div>
-        <div class="col-out"><div class="col-head">OUT</div>
-          <div class="c out">All Is Dust</div>
-          <div class="c out"><span class="q">2</span>Sowing Mycospawn</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-</script>
+<script></script>
 </body>
 </html>
